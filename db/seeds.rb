@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-john = User.create(email: 'john@beatles.com', password: 'testtest', avatar_url: 'http://johnlennonartwork.com/wp-content/uploads/2011/05/john-lennon1-300x294.jpg')
+john = User.create(email: 'john@beatles.com', password: 'testtest', avatar_url: 'http://img.clubic.com/07668593-photo-portrait-officiel-de-john-lennon.jpg')
 paul = User.create(email: 'paul@beatles.com', password: 'testtest', avatar_url: 'http://beatlesthe.free.fr/img/paul.jpg')
 ringo = User.create(email: 'ringo@beatles.com', password: 'testtest', avatar_url: '')
 george = User.create(email: 'george@beatles.com', password: 'testtest', avatar_url: '')
