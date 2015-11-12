@@ -6,8 +6,12 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-sm-10 col-sm-offset-1">
-        <div class="product">
-          <div class='product-upvote'>TODO</div>
+        <div class="product" id="product-<%= product.id %>">
+          <div class='product-upvote'>
+            <%= link_to upvote_product_path(product), method: :post, remote: true do %>
+              <%= product.votes_for.count %>
+            <% end %>
+          </div>
           <div class='product-body'>
             <h2><%= product.name %></h2>
             <p><%= product.tagline %><br><%= product.url %></p>
